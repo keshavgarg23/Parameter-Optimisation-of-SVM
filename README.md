@@ -26,7 +26,7 @@ The dataset is split into training and testing set for 10 times and the followin
 The above hyperparameters are randomly selected from the given values for 100 iterations. The parameters that gave the best accuracy for each sample are shown in table below:
 
     |Sample| Kernel   |   c | gamma   |   degree |   Accuracy |
-    |------|:---------|----:|:--------|---------:|-----------:|
+    |:-----|:---------|----:|:--------|---------:|-----------:|
     |1     | rbf      |   7 | scale   |        1 |   0.976333 |
     |2     | poly     |   2 | auto    |        5 |   0.978    |
     |3     | rbf      |   4 | scale   |        4 |   0.981333 |
