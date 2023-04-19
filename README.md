@@ -1,7 +1,7 @@
 # Parameter Optimisation of SVM
 
 ## Introduction
-This assignment illustrates a way of finding the optimal hyper parameter of Support Vector Classifier. The data set used here is AI4I 2020 Predictive Maintenance Dataset Data Set from UCI repository.
+This assignment illustrates a way of finding the optimal hyperparameter of Support Vector Classifier. The data set used here is AI4I 2020 Predictive Maintenance Dataset Data Set from UCI repository.
 
 
 ## Dataset
@@ -20,10 +20,10 @@ First 6 columns are used to predict the Machine Failure.
 The dataset is split into training and testing set for 10 times and the following SVC classifier hyperparameter are selected for best accuracy:
 - **Kernel** - Selected from RBF, Polynomial, Linear and Sigmoid
 -  **C (Regularisation parameter)** - Random integer values from 1 to 7
-- **Gamma (Kernel coefficient)** - Random integer values from -1 to 7. If value if less than 1 then gamma is randomly set as auto or scale. It is used only by rbf, poly and sigmoid kernels.
-- **Degree** - Random integer from 1 to 5. It is used only by poly kernel and represent the degree of polynomial kernel function.
+- **Gamma (Kernel coefficient)** - Random integer values from -1 to 7. If the value is less than 1, then gamma is randomly set as auto or scale. It is used only by rbf, poly and sigmoid kernel.
+- **Degree** - Random integer from 1 to 5. It is only used by poly kernel and represent the degree of polynomial kernel function.
 
-The above hyperparameter are random from the given values for 100 iterations. The parameter that gave the best accuracy for a sample are shown in table below:
+The above hyperparameters are randomly selected from the given values for 100 iterations. The parameters that gave the best accuracy for each sample are shown in table below:
 
     |Sample| Kernel   |   c | gamma   |   degree |   Accuracy |
     |------|:---------|----:|:--------|---------:|-----------:|
@@ -38,13 +38,13 @@ The above hyperparameter are random from the given values for 100 iterations. Th
     |9     | rbf      |   7 | auto    |        3 |   0.980333 |
     |10    | rbf      |   7 | auto    |        5 |   0.979333 |
 
-The following Convergence graph show the accuracy of sample 8 (sample with maximum accuracy) over the 100 iterations:
+The following Convergence graph shows the accuracy of sample 8 (maximum accuracy) over the 100 iterations:
 
 ![Convergence graph of sample 8](./images/100_iter.png)
 
 
 ## Result
-The best parameter found for the SVM for the given dataset are:
+The best parameters of SVC for the given dataset are:
 - Kernel : rbf
 - C : 7
 - Gamma : scale
