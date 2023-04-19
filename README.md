@@ -49,4 +49,5 @@ The best parameters of SVC for the given dataset are:
 - C : 7
 - Gamma : scale
 - Degree : NA
+
 The above parameter gave a maximum accuracy of 0.983667.
