@@ -22,6 +22,7 @@ The dataset is split into training and testing set for 10 times and the followin
 -  **C (Regularisation parameter)** - Random integer values from 1 to 7
 - **Gamma (Kernel coefficient)** - Random integer values from -1 to 7. If value if less than 1 then gamma is randomly set as auto or scale. It is used only by rbf, poly and sigmoid kernels.
 - **Degree** - Random integer from 1 to 5. It is used only by poly kernel and represent the degree of polynomial kernel function.
+
 The above hyperparameter are random from the given values for 100 iterations. The parameter that gave the best accuracy for a sample are shown in table below:
 
     |Sample| Kernel   |   c | gamma   |   degree |   Accuracy |
